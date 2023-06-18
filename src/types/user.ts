@@ -7,4 +7,6 @@ export interface IUserType extends Document {
 	password: string;
 	phone: string;
 	type: UserTypes;
+	createdAt?: string;
+	updatedAt?: string;
 }

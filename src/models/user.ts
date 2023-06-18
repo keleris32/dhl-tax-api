@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
 import { IUserType } from "../types/user";
+import { UserTypes } from "../enums/user";
 
 const Schema = mongoose.Schema;
 
@@ -32,6 +33,7 @@ const userSchema = new Schema(
 		},
 		type: {
 			required: true,
+			enum: UserTypes,
 			type: String,
 		},
 	},
